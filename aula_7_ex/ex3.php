@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <a href="/bem-vindo.php?nome=Fabricio&email=araujopa%40gmail.com">
+                <a href="/bem-vindo.php?nome=Fabricio&email=araujopa@gmail.com">
                     Clique aqui
                 </a>
             </div>
