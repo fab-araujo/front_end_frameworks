@@ -13,9 +13,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Olá, <?php echo $_POST["nome"] ?></h1>
+                <h1>Olá, <?php echo $_GET["nome"] ?></h1>
                 <p>
-                    Seu email é: <?php echo $_POST["email"] ?>
+                    Seu email é: <?php echo $_GET["email"] ?>
                 </p>
             </div>
         </div>
