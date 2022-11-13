@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery demo</title>
+  </head>
+  <body>
+    <form>
+        Digite o primeiro número: <input type="text" id="n1"><br>
+        Digite o segundo número: <input type="text" id="n2"><br>
+        <button id="calcular">Calcular</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $('#calcular').click(function(){
+            var n1 = $('#n1').val();
+            var n2 = $('#n2').val();
+            var soma = parseFloat(n1)+parseFloat(n2);
+            alert(soma);
+        })
+    </script>
+  </body>
+</html>
