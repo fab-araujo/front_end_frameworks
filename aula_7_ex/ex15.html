@@ -6,19 +6,18 @@
     <title>jQuery demo</title>
   </head>
   <body>
-    <form>
+    <form action="calculo.php">
         Digite o primeiro número: <input type="text" id="n1" name="n1"><br>
         Digite o segundo número: <input type="text" id="n2" name="n1"><br>
-        <button id="calcular">Calcular</button>
+        <button type="submit" id="calcular">Calcular</button>
     </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
         $('#calcular').click(function(){
-            var n1 = $('#n1').val();
-            var n2 = $('#n2').val();
-            var soma = parseFloat(n1)+parseFloat(n2);
-            alert(soma);
+            if($('#n1').val() == '' || $('#n2').val() == ''){
+                alert("Você deve escrever os dois números!");
+            }
         })
     </script>
   </body>
