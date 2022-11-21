@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery demo</title>
+  </head>
+  <body>
+    <form method="post" action="resultado.php">
+        Selecione a operação: 
+        <select name="operacao">
+            <option value="soma">
+                Somar
+            </option>
+            <option value="sub">
+                Subtração
+            </option>
+            <option value="mult">
+                Multiplicação
+            </option>
+            <option value="div">
+                Divisão
+            </option>
+        </select><br>
+        Digite o primeiro número: <input type="text" id="n1" name="n1"><br>
+        Digite o segundo número: <input type="text" id="n2" name="n2"><br>
+        <button id="calcular">Calcular</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $('#calcular').click(function(){
+            if($('#n1').val() == '' || $('#n2').val() == ''){
+                alert("Você deve escrever os dois números!");
+                return false;
+            }
+        })
+    </script>
+  </body>
+</html>
